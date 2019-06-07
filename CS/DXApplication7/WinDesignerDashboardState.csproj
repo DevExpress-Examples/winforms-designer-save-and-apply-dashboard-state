@@ -113,9 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dashboards\dashboard1.xml" />
-    <Content Include="Data\NWind.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Data\Sales.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
