@@ -41,7 +41,7 @@
         <Measure DataMember="RevenueYTD (Sum)" DefaultId="DataItem2" />
         <Measure DataMember="RevenueYTDTarget (Sum)" DefaultId="DataItem3" />
       </DataItems>
-      <ViewArea TopLatitude="56.004901597302549" BottomLatitude="16.452440377659528" LeftLongitude="-126.91827398213839" RightLongitude="-65.052341891043667" CenterPointLatitude="38.906481366450315" CenterPointLongitude="-95.985307936591028" CreateViewerPaddings="false" />
+      <ViewArea TopLatitude="53.256021406040688" BottomLatitude="11.846837333687329" LeftLongitude="-129.21787076498922" RightLongitude="-67.35193867389448" CenterPointLatitude="35.114037901301387" CenterPointLongitude="-98.28490471944184" CreateViewerPaddings="false" />
       <MapLegend />
       <WeightedLegend />
       <AttributeDimension DefaultId="DataItem0" />
@@ -88,4 +88,10 @@
       <LayoutItem DashboardItem="gridDashboardItem1" Weight="21.646746347941566" />
     </LayoutGroup>
   </LayoutTree>
+  <UserData>
+    <Root>
+      <DateModified>2019-06-10T18:01:52.9369001+03:00</DateModified>
+      <DashboardState>&lt;DashboardState&gt;&lt;Items&gt;&lt;Item Name="choroplethMapDashboardItem1" LayerIndex="1"&gt;&lt;MasterFilter&gt;&lt;Values&gt;&lt;Value Type="System.String" Value="Wyoming" /&gt;&lt;/Values&gt;&lt;/MasterFilter&gt;&lt;/Item&gt;&lt;Item Name="gridDashboardItem1"&gt;&lt;DrillDown&gt;&lt;Value Type="System.String" Value="Bikes" /&gt;&lt;/DrillDown&gt;&lt;/Item&gt;&lt;/Items&gt;&lt;/DashboardState&gt;</DashboardState>
+    </Root>
+  </UserData>
 </Dashboard>

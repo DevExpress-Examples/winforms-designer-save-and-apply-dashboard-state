@@ -54,6 +54,8 @@
             this.dashboardDesigner.Size = new System.Drawing.Size(1198, 599);
             this.dashboardDesigner.TabIndex = 0;
             this.dashboardDesigner.UseNeutralFilterMode = true;
+            this.dashboardDesigner.DashboardLoaded += new DevExpress.DashboardWin.DashboardLoadedEventHandler(this.dashboardDesigner_DashboardLoaded);
+            this.dashboardDesigner.SetInitialDashboardState += new DevExpress.DashboardWin.SetInitialDashboardStateEventHandler(this.dashboardDesigner_SetInitialDashboardState);
             // 
             // DesignerForm1
             // 
