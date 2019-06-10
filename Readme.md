@@ -1,3 +1,5 @@
+# How to save and apply the current dashboard state
+
 This example shows how how to manage the dashboard state to save and restore selected master filter values, current drill-down levels and other selections such as the selected Choropleth Map's layer.
 
 The saved dashboard state contains the following settings:
