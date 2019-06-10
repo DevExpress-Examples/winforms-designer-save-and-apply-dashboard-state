@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DashboardState>
+  <Items>
+    <Item Name="choroplethMapDashboardItem1" LayerIndex="1">
+      <MasterFilter>
+        <Values>
+          <Value Type="System.String" Value="Wyoming" />
+        </Values>
+      </MasterFilter>
+    </Item>
+    <Item Name="gridDashboardItem1">
+      <DrillDown>
+        <Value Type="System.String" Value="Bikes" />
+      </DrillDown>
+    </Item>
+  </Items>
+</DashboardState>
