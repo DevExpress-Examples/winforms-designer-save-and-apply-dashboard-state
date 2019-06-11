@@ -2,6 +2,8 @@
 
 This example shows how how to manage the dashboard state to save and restore selected master filter values, current drill-down levels and other selections such as the selected Choropleth Map's layer.
 
+![](/image.png)
+
 The saved dashboard state contains the following settings:
 
 - The ChoroplethMap's **LayerIndex** is set to **1**.
