@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,7 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{76738804-BEAF-4C74-BE37-CD712F0764C3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>DXApplication7</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -107,6 +108,7 @@
     <EmbeddedResource Include="DesignerForm1.resx">
       <DependentUpon>DesignerForm1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -129,7 +131,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dashboards\dashboard1.xml" />
+    <Content Include="Dashboards\dashboardWithSavedState.xml" />
     <None Include="Data\Sales.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

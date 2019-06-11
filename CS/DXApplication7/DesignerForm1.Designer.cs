@@ -55,6 +55,7 @@
             this.dashboardDesigner.TabIndex = 0;
             this.dashboardDesigner.UseNeutralFilterMode = true;
             this.dashboardDesigner.DashboardLoaded += new DevExpress.DashboardWin.DashboardLoadedEventHandler(this.dashboardDesigner_DashboardLoaded);
+            this.dashboardDesigner.DashboardClosing += new DevExpress.DashboardWin.DashboardClosingEventHandler(this.dashboardDesigner_DashboardClosing);
             this.dashboardDesigner.SetInitialDashboardState += new DevExpress.DashboardWin.SetInitialDashboardStateEventHandler(this.dashboardDesigner_SetInitialDashboardState);
             // 
             // DesignerForm1
