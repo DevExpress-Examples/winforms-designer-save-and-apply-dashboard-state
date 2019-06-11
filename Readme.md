@@ -1,6 +1,6 @@
 # How to Set the Initial Dashboard State
 
-This example shows how how to manage the dashboard state to save and restore selected master filter values, current drill-down levels and other selections such as the selected Choropleth Map's layer.
+This example shows how to manage the dashboard state to save and restore selected master filter values, current drill-down levels and other selections such as the selected Choropleth Map's layer.
 
 ![](/image.png)
 
