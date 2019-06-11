@@ -92,7 +92,6 @@
     <EmbeddedResource Include="DesignerForm1.resx">
       <DependentUpon>DesignerForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
