@@ -15,3 +15,7 @@ When the dashboard is closed, the [DashboardDesigner.GetDashboardState](https://
 When the application starts, the **DashboardDesigner** loads the dashboard and the [DashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardState) object is deserialized in the [DashboardDesigner.DashboardLoaded](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.DashboardLoaded) event.
 
 The dashboard state is restored using the [DashboardDesigner.SetDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.SetDashboardState(DevExpress.DashboardCommon.DashboardState)) method in the [DashboardDesigner.SetInitialDashboardState ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.SetInitialDashboardState) event.
+
+## See Also
+
+[Manage Dashboard State](https://docs.devexpress.com/Dashboard/400730/create-the-designer-and-viewer-applications/winforms-designer/manage-dashboard-state)
