@@ -1,4 +1,4 @@
-# How to Set the Initial Dashboard State
+# How to Set the Initial Dashboard State in the WinForms Designer
 
 This example shows how to manage the dashboard state to save and restore selected master filter values, current drill-down levels and other selections such as the selected Choropleth Map's layer.
 
