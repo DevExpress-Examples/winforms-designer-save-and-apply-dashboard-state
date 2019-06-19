@@ -54,9 +54,6 @@
             this.dashboardDesigner.Size = new System.Drawing.Size(1198, 599);
             this.dashboardDesigner.TabIndex = 0;
             this.dashboardDesigner.UseNeutralFilterMode = true;
-            this.dashboardDesigner.DashboardLoaded += new DevExpress.DashboardWin.DashboardLoadedEventHandler(this.dashboardDesigner_DashboardLoaded);
-            this.dashboardDesigner.DashboardClosing += new DevExpress.DashboardWin.DashboardClosingEventHandler(this.dashboardDesigner_DashboardClosing);
-            this.dashboardDesigner.SetInitialDashboardState += new DevExpress.DashboardWin.SetInitialDashboardStateEventHandler(this.dashboardDesigner_SetInitialDashboardState);
             // 
             // DesignerForm1
             // 
@@ -66,7 +63,7 @@
             this.ClientSize = new System.Drawing.Size(1198, 599);
             this.Controls.Add(this.dashboardDesigner);
             this.Name = "DesignerForm1";
-            this.Text = "Dashboard Designer";
+            this.Text = "Dashboard State Example";
             ((System.ComponentModel.ISupportInitialize)(this.dashboardBarAndDockingController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardDesigner)).EndInit();
             this.ResumeLayout(false);

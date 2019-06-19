@@ -26,8 +26,8 @@
 			Me.components = New System.ComponentModel.Container()
 			Me.dashboardBarAndDockingController1 = New DevExpress.DashboardWin.Native.DashboardBarAndDockingController(Me.components)
 			Me.dashboardDesigner = New DevExpress.DashboardWin.DashboardDesigner()
-			CType(Me.dashboardBarAndDockingController1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.dashboardDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.dashboardBarAndDockingController1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.dashboardDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' dashboardBarAndDockingController1
@@ -52,12 +52,6 @@
 			Me.dashboardDesigner.Size = New System.Drawing.Size(1198, 599)
 			Me.dashboardDesigner.TabIndex = 0
 			Me.dashboardDesigner.UseNeutralFilterMode = True
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.dashboardDesigner.DashboardLoaded += new DevExpress.DashboardWin.DashboardLoadedEventHandler(this.dashboardDesigner_DashboardLoaded);
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.dashboardDesigner.DashboardClosing += new DevExpress.DashboardWin.DashboardClosingEventHandler(this.dashboardDesigner_DashboardClosing);
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.dashboardDesigner.SetInitialDashboardState += new DevExpress.DashboardWin.SetInitialDashboardStateEventHandler(this.dashboardDesigner_SetInitialDashboardState);
 			' 
 			' DesignerForm1
 			' 
@@ -67,16 +61,16 @@
 			Me.ClientSize = New System.Drawing.Size(1198, 599)
 			Me.Controls.Add(Me.dashboardDesigner)
 			Me.Name = "DesignerForm1"
-			Me.Text = "Dashboard Designer"
-			CType(Me.dashboardBarAndDockingController1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.dashboardDesigner, System.ComponentModel.ISupportInitialize).EndInit()
+			Me.Text = "Dashboard State Example"
+			DirectCast(Me.dashboardBarAndDockingController1, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.dashboardDesigner, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
 
 		#End Region
 
-		Private WithEvents dashboardDesigner As DevExpress.DashboardWin.DashboardDesigner
+		Private dashboardDesigner As DevExpress.DashboardWin.DashboardDesigner
 		Private dashboardBarAndDockingController1 As DevExpress.DashboardWin.Native.DashboardBarAndDockingController
 	End Class
 End Namespace

@@ -10,6 +10,9 @@ namespace WinDesignerDashboardState
         const string path = @"..\..\Dashboards\dashboardWithSavedState.xml";
         public DesignerForm1() {
             InitializeComponent();
+            dashboardDesigner.DashboardLoaded += dashboardDesigner_DashboardLoaded;
+            dashboardDesigner.DashboardClosing += dashboardDesigner_DashboardClosing;
+            dashboardDesigner.SetInitialDashboardState += dashboardDesigner_SetInitialDashboardState;
             dashboardDesigner.CreateRibbon();
             dashboardDesigner.LoadDashboard(path);
         }
