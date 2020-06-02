@@ -5,36 +5,33 @@ Imports System.Xml.Linq
 Namespace WinDesignerDashboardState
 	Partial Public Class DesignerForm1
 		Inherits DevExpress.XtraBars.Ribbon.RibbonForm
-
-		Private dState As New DashboardState()
 		Private Const path As String = "..\..\Dashboards\dashboardWithSavedState.xml"
+		Public Shared ReadOnly PropertyName As String = "DashboardState"
 		Public Sub New()
 			InitializeComponent()
-			AddHandler dashboardDesigner.DashboardLoaded, AddressOf dashboardDesigner_DashboardLoaded
 			AddHandler dashboardDesigner.DashboardClosing, AddressOf dashboardDesigner_DashboardClosing
 			AddHandler dashboardDesigner.SetInitialDashboardState, AddressOf dashboardDesigner_SetInitialDashboardState
 			dashboardDesigner.CreateRibbon()
 			dashboardDesigner.LoadDashboard(path)
 		End Sub
-		Private Sub dashboardDesigner_DashboardLoaded(ByVal sender As Object, ByVal e As DevExpress.DashboardWin.DashboardLoadedEventArgs)
-			Dim data As XElement = e.Dashboard.UserData
-			If data IsNot Nothing Then
-				If data.Element("DashboardState") IsNot Nothing Then
-					Dim dStateDocument As XDocument = XDocument.Parse(data.Element("DashboardState").Value)
-					dState.LoadFromXml(XDocument.Parse(data.Element("DashboardState").Value))
-				End If
+		Private Function GetDataFromString(ByVal customPropertyValue As String) As DashboardState
+			Dim dState As New DashboardState()
+			If (Not String.IsNullOrEmpty(customPropertyValue)) Then
+				Dim xmlStateEl = XDocument.Parse(customPropertyValue)
+				dState.LoadFromXml(xmlStateEl)
 			End If
-		End Sub
+			Return dState
+		End Function
+
 		Private Sub dashboardDesigner_SetInitialDashboardState(ByVal sender As Object, ByVal e As DevExpress.DashboardWin.SetInitialDashboardStateEventArgs)
-			e.InitialState = dState
+			Dim state = GetDataFromString(dashboardDesigner.Dashboard.CustomProperties.GetValue(PropertyName))
+			e.InitialState = state
 		End Sub
 
 		Private Sub dashboardDesigner_DashboardClosing(ByVal sender As Object, ByVal e As DevExpress.DashboardWin.DashboardClosingEventArgs)
-			dState = dashboardDesigner.GetDashboardState()
-			Dim userData As New XElement("Root", 
-				New XElement("DateModified",Date.Now), 
-				New XElement("DashboardState",dState.SaveToXml().ToString(SaveOptions.DisableFormatting)))
-			dashboardDesigner.Dashboard.UserData = userData
+			Dim dState = dashboardDesigner.GetDashboardState()
+			Dim stateValue = dState.SaveToXml().ToString(SaveOptions.DisableFormatting)
+			dashboardDesigner.Dashboard.CustomProperties.SetValue("DashboardState", stateValue)
 			dashboardDesigner.Dashboard.SaveToXml(path)
 		End Sub
 	End Class
