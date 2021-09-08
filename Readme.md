@@ -8,7 +8,7 @@
 
 * [DesignerForm1.cs](./CS/WinDesignerDashboardState/DesignerForm1.cs) (VB: [DesignerForm1.vb](./VB/WinDesignerDashboardState/DesignerForm1.vb))
 <!-- default file list end -->
-# Dashboard for WinForms - Set the Initial Dashboard State
+# Dashboard for WinForms - Set the Initial Dashboard State in Designer
 
 This example shows how to manage the dashboard state to save and restore selected master filter values, current drill-down levels and other selections such as the selected Choropleth Map's layer.
 
@@ -34,6 +34,6 @@ When the application starts, the **DashboardDesigner** loads the dashboard and t
 
 ## More Examples
 
-* [How to Save and Restore the Dashboard State](https://github.com/DevExpress-Examples/winforms-dashboard-save-restore-dashboard-state)
-* [How to Set the Initial Dashboard State in the WinForms Viewer](https://github.com/DevExpress-Examples/winforms-viewer-save-and-apply-dashboard-state)
-* [How to Set the Initial Dashboard State in the WPF Dashboard](https://github.com/DevExpress-Examples/wpf-dashboard-how-to-set-initial-dashboard-state)
+* [Dashboard for WinForms - How to Save and Restore the Dashboard State](https://github.com/DevExpress-Examples/winforms-dashboard-save-restore-dashboard-state)
+* [Dashboard for WinForms - How to Set the Initial Dashboard State in the Viewer](https://github.com/DevExpress-Examples/winforms-viewer-save-and-apply-dashboard-state)
+* [Dashboard for WPF - How to Set the Initial Dashboard State](https://github.com/DevExpress-Examples/wpf-dashboard-how-to-set-initial-dashboard-state)
