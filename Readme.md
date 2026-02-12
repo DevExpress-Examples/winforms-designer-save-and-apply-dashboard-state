@@ -38,7 +38,7 @@ When the application starts, the **DashboardDesigner** loads the dashboard and t
 * [Dashboard for WinForms - How to Set the Initial Dashboard State in the Viewer](https://github.com/DevExpress-Examples/winforms-viewer-save-and-apply-dashboard-state)
 * [Dashboard for WPF - How to Set the Initial Dashboard State](https://github.com/DevExpress-Examples/wpf-dashboard-how-to-set-initial-dashboard-state)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-designer-save-and-apply-dashboard-state&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-designer-save-and-apply-dashboard-state&~~~was_helpful=no)
 
